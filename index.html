@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
     <title>BMI Calculator</title>
   </head>
   <body>
-    <div>
+    <div id="header">
       <h1>Body mass index calculator</h1>
       <p>
         Better understand your weight in relation to your height using our body
@@ -17,7 +19,7 @@
         overall health and well-being.
       </p>
     </div>
-    <div>
+    <div id="global">
       <div>
         <input type="radio" id="metric" name="mesure" value="metric" />
         <label for="metric">Metric</label>
@@ -39,6 +41,7 @@
       <p id="result"></p>
     </div>
     </div>
+  </div>
     <div>
         <h3>Limitations of BMI</h3>
         <p>Although BMI is often a practical indicator of healthy weight it is not suited for every person.<br /> Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>

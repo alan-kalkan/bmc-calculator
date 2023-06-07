@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+#global {
+  width: 250px;
+  height: 250px;
+  background-color: #ceeaf7;
+  border-radius: 10px;
+  border: 0.1px solid #ccd7e4;
+  box-shadow: 12px 14px 42px 5px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 12px 14px 42px 5px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 12px 14px 42px 5px rgba(0, 0, 0, 0.29);
+  display: grid;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+#header {
+}
+#metric {
+}
