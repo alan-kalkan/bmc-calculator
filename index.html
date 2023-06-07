@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js"></script>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div>
+      <h1>Body mass index calculator</h1>
+      <p>
+        Better understand your weight in relation to your height using our body
+        mass index calculator.<br />While BMI is not the sole determinant of a
+        healthy weight, it offers a valuable starting point to evaluate your
+        overall health and well-being.
+      </p>
+    </div>
+    <div>
+      <div>
+        <input type="radio" id="metric" name="mesure" value="metric" />
+        <label for="metric">Metric</label>
+      </div>
+      <div>
+        <input type="radio" id="imperial" name="mesure" value="imperial" />
+        <label for="imperial">Imperial</label>
+      </div>
+      <div>
+      <label id="unitone" for="height">Height</label>
+      <input id="height" placeholder=""></input>
+      <label id="unittwo" for="weight">Weight</label>
+      <input id="weight" placeholder=""></input>
+      <button id="calculate">Calculate your BMI</button>
+      <div class="result">
+      <p>Result:</p>
+      <p id="result"></p>
+    </div>
+    </div>
+    <div>
+        <h3>Limitations of BMI</h3>
+        <p>Although BMI is often a practical indicator of healthy weight it is not suited for every person.<br /> Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
+    </div>
+    </div>
+  </body>
+</html>
