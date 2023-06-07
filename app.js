@@ -4,10 +4,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const metric = document.getElementById("metric");
   const imperial = document.getElementById("imperial");
-  let firstUnit = document.getElementById("unitone");
-  let secondUnit = document.getElementById("unittwo");
-  let switchFirstUnit = document.getElementsByClassName("unitone");
-  let switchSecondtUnit = document.getElementsByClassName("unittwo");
+  const firstUnit = document.getElementById("unitone");
+  const secondUnit = document.getElementById("unittwo");
+  const switchFirstUnit = document.getElementsByClassName("unitone");
+  const switchSecondtUnit = document.getElementsByClassName("unittwo");
 
   metric.onclick = function () {
     firstUnit.innerText = "Height";
@@ -28,7 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const calculateButton = document.getElementById("calculate");
   calculateButton.addEventListener("click", function () {
-    if (firstUnit.innerText == "Height" && secondUnit.innerText == "Weight") {
+    if (
+      firstUnit.innerText == "Height" &&
+      secondUnit.innerText == "Weight" &&
+      !isNaN(firstUnit.innerText) &&
+      !isNaN(secondUnit.innerText)
+    ) {
       const parsedHeight = parseFloat(heightInput.value);
       const parsedWeight = parseFloat(weightInput.value);
       const heightInMeters = parsedHeight / 100;
@@ -41,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
       resultOutput.innerText = result;
     } else if (
       firstUnit.innerText == "Inches" &&
-      secondUnit.innerText == "Pounds"
+      secondUnit.innerText == "Pounds" &&
+      !isNaN(firstUnit.innerText) &&
+      !isNaN(secondUnit.innerText)
     ) {
       const parsedHeight = parseFloat(heightInput.value / 39.37);
       const parsedWeight = parseFloat(weightInput.value / 2.2046);
