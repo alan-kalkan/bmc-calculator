@@ -1,9 +1,35 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #ceeaf7;
+  background-image: linear-gradient(to bottom, #ffffff, #ceeaf7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+#weight::placeholder,
+#height::placeholder,
+#weight,
+#height {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: linear-gradient(to bottom, #ffffff, #ceeaf7);
+  }
+}
+#calculate {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 #global {
-  width: 250px;
-  height: 250px;
+  color: #ffffff;
+  position: relative;
+  width: 500px;
+  height: 150px;
   background-color: #ceeaf7;
   border-radius: 10px;
   border: 0.1px solid #ccd7e4;
@@ -11,12 +37,50 @@ body {
   -webkit-box-shadow: 12px 14px 42px 5px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 12px 14px 42px 5px rgba(0, 0, 0, 0.29);
   display: grid;
-
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 15px;
 }
-#header {
+
+input {
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333333;
+  transition: background-color 0.3s ease;
 }
-#metric {
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: #e1f1f8;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 3px 1px;
+  margin-bottom: 2px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ceeaf7;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ffffff;
+  color: #ceeaf7;
 }
