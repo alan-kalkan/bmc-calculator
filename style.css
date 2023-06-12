@@ -1,5 +1,5 @@
-body {
-  font-family: "Open Sans", sans-serif;
+/* body {
+  
   background-color: #ceeaf7;
   background-image: linear-gradient(to bottom, #ffffff, #ceeaf7);
   background-repeat: no-repeat;
@@ -83,4 +83,97 @@ input[type="radio"] + label {
 input[type="radio"]:checked + label {
   background-color: #ffffff;
   color: #ceeaf7;
+} */
+
+/* Reset des styles par défaut */
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.4;
+}
+
+#header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#global {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#global input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #global {
+    margin: 10px;
+  }
+
+  input[type="text"],
+  button {
+    width: 100%;
+  }
 }

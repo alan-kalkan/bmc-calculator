@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const switchSecondtUnit = document.getElementsByClassName("unittwo");
   const heightInput = document.getElementById("height");
   const weightInput = document.getElementById("weight");
+  const resultOutput = document.getElementById("result");
 
   metric.onclick = function () {
     firstUnit.innerText = "Height";
@@ -56,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let result =
         Math.round((parsedWeight / (parsedHeight * parsedHeight)) * 10) / 10;
 
-      const resultOutput = document.getElementById("result");
       resultOutput.innerText = result;
     }
   });
